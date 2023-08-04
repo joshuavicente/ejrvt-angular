@@ -1,5 +1,10 @@
-h1 {
-  cursor: pointer;
+.title {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-link:hover {
+  color: lightcyan;
 }
 
 @media (max-width: 426px) {
