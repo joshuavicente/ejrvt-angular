@@ -1,7 +1,11 @@
+h1 {
+  cursor: pointer;
+}
+
 @media (max-width: 426px) {
   h1 { font-size: 7.529vw; }
   
-  a { 
+  .nav-link { 
     font-size: 3.765vw; 
     padding: 1.882vw 3.765vw 1.882vw 3.765vw;
   }
