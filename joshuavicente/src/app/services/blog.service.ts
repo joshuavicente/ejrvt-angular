@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
 
 export interface BlogArticle {
-  id: number;
   title: string;
   content: string;
+  tag: string;
 }
 
 @Injectable({
@@ -11,16 +11,16 @@ export interface BlogArticle {
 })
 export class BlogService {
   private blogData: BlogArticle[] = [
-    { id: 1, title: 'First Blog Post', content: 'Content of the first post.' },
-    { id: 2, title: 'Second Blog Post', content: 'Content of the second post.' }
+    { title: 'First Blog Post', content: 'Content of the first post.', tag: 'first-blog-post' },
+    { title: 'Second Blog Post', content: 'Content of the second post.', tag: 'second-blog-post' }
   ];
 
   getAllArticles(): BlogArticle[] {
     return this.blogData;
   }
 
-  getArticleById(id: number): BlogArticle | undefined {
-    return this.blogData.find(article => article.id === id);
+  getArticleByTag(tag: string): BlogArticle | undefined {
+    return this.blogData.find(article => article.tag === tag);
   }
 }
 
