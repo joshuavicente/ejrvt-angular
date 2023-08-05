@@ -1,8 +1,7 @@
 <div class="container">
-  <h1>Blog</h1>
-  <hr class="mb-5">
+  <h1 class="mb-5">Blog</h1>
 
   <div *ngFor="let article of articles">
-    <a class="mb-3">{{ article.title }}</a>
+    <a class="mb-3" [routerLink]="['/blog', article.tag]">{{ article.title }}</a>
   </div>
 </div>
