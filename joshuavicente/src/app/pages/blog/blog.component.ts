@@ -9,10 +9,11 @@ import { BlogService, BlogArticle } from '../../services/blog.service';
 export class BlogComponent implements OnInit {
   articles: BlogArticle[] = [];
 
-  constructor(private blogService: BlogService) { }
+  constructor(
+    private blogService: BlogService
+  ) { }
 
   ngOnInit(): void {
     this.articles = this.blogService.getAllArticles();
-    console.log(this.articles)
   }
 }
