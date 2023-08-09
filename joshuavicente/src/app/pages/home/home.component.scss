@@ -1,0 +1,175 @@
+.sticky-wrapper {
+  position: sticky;
+  top: 0;
+  //z-index: 999;
+}
+
+.header, .content {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.header {
+  height: 100vh;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.sub-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.title:hover {
+  color: grey;
+}
+
+.link {
+  text-decoration: none;
+  color: lightcyan;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: lightpink;
+}
+
+img {
+  border-radius: 10px;
+}
+
+.gray-text {
+  color: darkgray;
+}
+
+.section-margin {
+  margin-bottom: 9rem;
+}
+
+.nav-margin {
+  margin-top: 4rem;
+}
+
+nav, ul {
+  list-style: none;
+  padding-left: 0rem;
+
+  li {
+    cursor: pointer;
+
+    a {
+      text-decoration: none;
+      color: gray;
+      transition: color 0.2s ease;
+
+      .nav-indicator {
+        display: inline-block;
+        width: 2rem;
+        height: 1px;
+        margin-right: 1rem;
+        background-color: gray;
+        transition: width 0.2s, color 0.2s ease;
+      }
+
+      .nav-link-text {
+        font-size: .75rem;
+        line-height: 1rem;
+        font-weight: 700;
+        letter-spacing: .1em;
+        text-transform: uppercase;
+      }
+    }
+    
+    a:hover {
+      color: white;
+
+      .nav-indicator {
+        width: 4rem;
+        background-color: white;
+      }
+    }
+
+    a.active {
+      color: white;
+  
+      .nav-indicator {
+          width: 4rem;
+          background-color: white;
+      }
+    }
+  }
+}
+
+.job-ol {
+  list-style: none;
+  padding-left: 0rem;
+
+  .job-li {
+    cursor: pointer;
+    margin-bottom: 3rem;
+
+    .job-card {
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+      text-decoration: none;
+
+      .job-date {
+        font-size: .75rem;
+        text-transform: uppercase;
+        white-space: nowrap;
+        margin-top: 2px;
+      }
+
+      .job-title {
+        font-size: 1rem;
+        font-weight: 500;
+        color: white;
+      }
+
+      .job-desc {
+        font-size: .875rem;
+      }
+
+      .skills-margin {
+        margin-top: .5em;
+        margin-right: .375rem;
+
+        .skills-item {
+          font-size: .75rem;
+          line-height: 1.25rem;
+          font-weight: 500;
+          background-color: rgba(45,212,191,.1);
+          color: rgb(94 234 212);
+          border-radius: 9999px;
+        }
+      }
+    }
+  }
+}
+
+.resume-link {
+  display: inline-flex;
+  align-items: center;
+  line-height: 1.25;
+  font-weight: 600;
+  text-decoration: inherit;
+  color: white;
+  transition: color 0.2s ease;
+}
+
+.resume-link:hover {
+  color: rgb(94 234 212);
+}
+
+/* @media (max-width: 1024px) {
+    .header {
+      position: static !important;
+    }
+} */
