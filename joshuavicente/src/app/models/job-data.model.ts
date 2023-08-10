@@ -2,22 +2,22 @@ export const jobs = [
   {
     date: '2022 — Present',
     link: 'https://www.nalagenetics.com',
-    title: 'Software Engineer (Front-End) · Nalagenetics Pte Ltd',
-    description: 'Deliver high-quality, robust production code for a diverse array of projects for clients including Harvard Business School, Everytown for Gun Safety, Pratt Institute, Koala Health, Vanderbilt University, The 19th News, and more. Provide leadership within engineering department through close collaboration, knowledge shares, and mentorship.',
-    skills: ['Angular', 'SCSS', 'JavaScript', 'TypeScript']
+    title: 'Software Engineer (Front-End) · Nalagenetics',
+    description: 'Front-end developer skilled in creating scalable web portals and company websites for optimal user experiences. Collaborated on API integrations, conducted code reviews, and resolved bugs while ensuring minimal downtime. Leveraged Figma for efficient UI/UX design collaboration. Managed documentation and utilized Jira/Atlassian for effective project management.',
+    skills: ['Angular', 'SASS', 'JavaScript', 'TypeScript', 'Bitbucket', 'SourceTree', 'Figma', 'Jira']
   },
   {
-    date: '2022 — Present',
+    date: '2021 — 2022',
     link: 'https://www.nalagenetics.com',
-    title: 'Software Engineer (Front-End) · Nalagenetics Pte Ltd',
-    description: 'Deliver high-quality, robust production code for a diverse array of projects for clients including Harvard Business School, Everytown for Gun Safety, Pratt Institute, Koala Health, Vanderbilt University, The 19th News, and more. Provide leadership within engineering department through close collaboration, knowledge shares, and mentorship.',
-    skills: ['Angular', 'SCSS', 'JavaScript', 'TypeScript']
+    title: 'IT Support Engineer · Nalagenetics',
+    description: 'Managed physical and virtual IT assets, user accounts, and provided access to laptops, peripherals, and Amazon Web Services (AWS). Created an IT Helpdesk using Jira, supported efficiency improvements, and oversaw user onboarding/offboarding. Ensured compliance with ISO 27001 and ISO 13485 standards through policy creation, audits, and meticulous asset documentation.',
+    skills: ['Jira', 'AWS', 'ISO 27001', 'ISO 13485', 'Office 365', 'JumpCloud', 'Maintenance', 'Troubleshooting']
   },
   {
-    date: '2022 — Present',
-    link: 'https://www.nalagenetics.com',
-    title: 'Software Engineer (Front-End) · Nalagenetics Pte Ltd',
-    description: 'Deliver high-quality, robust production code for a diverse array of projects for clients including Harvard Business School, Everytown for Gun Safety, Pratt Institute, Koala Health, Vanderbilt University, The 19th News, and more. Provide leadership within engineering department through close collaboration, knowledge shares, and mentorship.',
-    skills: ['Angular', 'SCSS', 'JavaScript', 'TypeScript']
+    date: '2020 — 2021',
+    link: 'https://geodis.com/sg/en',
+    title: 'Regional IT Project Specialist · GEODIS APAC',
+    description: 'Collaborated on APAC-level projects involving Software Application, IT Infrastructure, and IT Service-Management divisions. Led ITSM initiatives enhancing efficiency and support resolution across 14 countries, contributed to Demand Management, and assisted in Server/PC Migrations. Supported CIO in project updates, workload analysis, and bi-weekly IT updates to the Regional IT Team.',
+    skills: ['ITSM', 'Microsoft Azure', 'Office 365', 'Project Management', 'Documentation']
   },
 ];
