@@ -1,6 +1,7 @@
 import { Component, AfterViewInit, HostListener } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { jobs } from 'src/app/models/job-data.model';
+import { projects } from 'src/app/models/project-data.model';
 
 export interface Job {
   date: string;
@@ -10,6 +11,16 @@ export interface Job {
   skills: string[];
 }
 
+export interface Project {
+  img: string;
+  imgName: string;
+  link: string;
+  title: string;
+  description: string;
+  skills: string[];
+}
+
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -18,6 +29,7 @@ export interface Job {
 export class HomeComponent implements AfterViewInit {
   currentSection = 'about';
   jobs: Job[] = jobs;
+  projects: Project[] = projects;
 
   constructor(
     private route: ActivatedRoute, 
