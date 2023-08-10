@@ -1,12 +1,12 @@
 <div class="container">
   <div class="row">
-    <div class="col-sm">
+    <div class="col-lg">
       <div class="sticky-wrapper">
         <div class="header d-flex flex-column justify-content-between">
           <div>
             <a class="title" href="">Joshua Vicente</a><br>
             <span class="sub-title">Software Engineer</span>
-            <p class="gray-text mt-3">Front-end developer crafting engaging web experiences<br> with HTML, CSS, and TypeScript.</p>
+            <p class="gray-text mt-3">Front-end developer crafting engaging web experiences<br> with HTML, SCSS, and TypeScript.</p>
             <nav class="nav-margin">
               <ul>
                 <li>
@@ -61,7 +61,7 @@
         </div>
       </div>
     </div>
-    <div class="col-sm">
+    <div class="col-lg">
       <div class="content">
         <section id="about" class="section-margin">
           <p class="gray-text mt-3 mb-4">
@@ -71,29 +71,32 @@
           <p class="gray-text">
             I've had the privilege of building and developing websites for a <a class="link" href="https://www.nalagenetics.com" target="_blank">biotech company</a>. I'm still learning and adapting to front-end technologies and upskilling myself whenever I had the chance.
           </p>
-          <img src="./assets/img/josh-db.jpg" alt="Josh Dragonboat" width="100%">
+          <img class="about-img mt-5" src="./assets/img/josh-db.jpg" alt="Josh Dragonboat" width="100%">
         </section>
         <section id="experience" class="section-margin">
-          <div>
-            <ol class="job-ol">
-              <li class="job-li" *ngFor="let job of jobs">
-                <a class="job-card" [href]="job.link" target="_blank">
-                  <header class="job-date gray-text">{{ job.date }}</header>
-                  <div>
-                    <span class="job-title">{{ job.title }}</span>
-                    <p class="job-desc gray-text mt-2">
-                      {{ job.description }}
-                    </p>
-                    <ul class="mt-2 d-flex flex-wrap">
-                      <li class="skills-margin" *ngFor="let skill of job.skills">
-                        <div class="d-flex align-items-center skills-item py-1 px-3">{{ skill }}</div>
-                      </li>
-                    </ul>
+          <ol class="card-ol">
+            <li class="card-li" *ngFor="let job of jobs">
+              <a class="row card-link" [href]="job.link" target="_blank">
+                <header class="col-sm-3 card-date gray-text">{{ job.date }}</header>
+                <div class="col-sm-8">
+                  <div class="d-flex flex-row align-items-center">
+                    <span class="card-title me-2">{{ job.title }}</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-arrow-up-right" style="color: white;" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
+                    </svg>
                   </div>
-                </a>
-              </li>
-            </ol>
-          </div>
+                  <p class="card-desc gray-text mt-2">
+                    {{ job.description }}
+                  </p>
+                  <ul class="mt-2 d-flex flex-wrap">
+                    <li class="skills-margin" *ngFor="let skill of job.skills">
+                      <div class="d-flex align-items-center skills-item py-1 px-3">{{ skill }}</div>
+                    </li>
+                  </ul>
+                </div>
+              </a>
+            </li>
+          </ol>
           <a class="resume-link" href="/resume.pdf" target="_blank">
             <span>View Full Résumé</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
@@ -101,59 +104,35 @@
             </svg>
           </a>
         </section>        
-        <section id="projects">
-          <p class="gray-text mt-3 mb-4">
-            I started my very first coding project in 2019 when I was in finals in my university. It was a simple website that had the basics mainly using HTML, CSS and PHP, in an ASP.NET framework. 
-            I had to learn them from scratch with no prior knowledge and little did I knew, it sparked my interest in coding. Fast forward after graduating and trying out different industries, I landed my very first job in web development. 
-          </p>
-          <p class="gray-text mt-3 mb-4">
-            I started my very first coding project in 2019 when I was in finals in my university. It was a simple website that had the basics mainly using HTML, CSS and PHP, in an ASP.NET framework. 
-            I had to learn them from scratch with no prior knowledge and little did I knew, it sparked my interest in coding. Fast forward after graduating and trying out different industries, I landed my very first job in web development. 
-          </p>
-          <p class="gray-text mt-3 mb-4">
-            I started my very first coding project in 2019 when I was in finals in my university. It was a simple website that had the basics mainly using HTML, CSS and PHP, in an ASP.NET framework. 
-            I had to learn them from scratch with no prior knowledge and little did I knew, it sparked my interest in coding. Fast forward after graduating and trying out different industries, I landed my very first job in web development. 
-          </p>
-          <p class="gray-text mt-3 mb-4">
-            I started my very first coding project in 2019 when I was in finals in my university. It was a simple website that had the basics mainly using HTML, CSS and PHP, in an ASP.NET framework. 
-            I had to learn them from scratch with no prior knowledge and little did I knew, it sparked my interest in coding. Fast forward after graduating and trying out different industries, I landed my very first job in web development. 
-          </p>
-          <p class="gray-text mt-3 mb-4">
-            I started my very first coding project in 2019 when I was in finals in my university. It was a simple website that had the basics mainly using HTML, CSS and PHP, in an ASP.NET framework. 
-            I had to learn them from scratch with no prior knowledge and little did I knew, it sparked my interest in coding. Fast forward after graduating and trying out different industries, I landed my very first job in web development. 
-          </p>
-          <p class="gray-text mt-3 mb-4">
-            I started my very first coding project in 2019 when I was in finals in my university. It was a simple website that had the basics mainly using HTML, CSS and PHP, in an ASP.NET framework. 
-            I had to learn them from scratch with no prior knowledge and little did I knew, it sparked my interest in coding. Fast forward after graduating and trying out different industries, I landed my very first job in web development. 
-          </p>
-          <p class="gray-text mt-3 mb-4">
-            I started my very first coding project in 2019 when I was in finals in my university. It was a simple website that had the basics mainly using HTML, CSS and PHP, in an ASP.NET framework. 
-            I had to learn them from scratch with no prior knowledge and little did I knew, it sparked my interest in coding. Fast forward after graduating and trying out different industries, I landed my very first job in web development. 
-          </p>
-          <p class="gray-text mt-3 mb-4">
-            I started my very first coding project in 2019 when I was in finals in my university. It was a simple website that had the basics mainly using HTML, CSS and PHP, in an ASP.NET framework. 
-            I had to learn them from scratch with no prior knowledge and little did I knew, it sparked my interest in coding. Fast forward after graduating and trying out different industries, I landed my very first job in web development. 
-          </p>
-          <p class="gray-text mt-3 mb-4">
-            I started my very first coding project in 2019 when I was in finals in my university. It was a simple website that had the basics mainly using HTML, CSS and PHP, in an ASP.NET framework. 
-            I had to learn them from scratch with no prior knowledge and little did I knew, it sparked my interest in coding. Fast forward after graduating and trying out different industries, I landed my very first job in web development. 
-          </p>
-          <p class="gray-text mt-3 mb-4">
-            I started my very first coding project in 2019 when I was in finals in my university. It was a simple website that had the basics mainly using HTML, CSS and PHP, in an ASP.NET framework. 
-            I had to learn them from scratch with no prior knowledge and little did I knew, it sparked my interest in coding. Fast forward after graduating and trying out different industries, I landed my very first job in web development. 
-          </p>
-          <p class="gray-text mt-3 mb-4">
-            I started my very first coding project in 2019 when I was in finals in my university. It was a simple website that had the basics mainly using HTML, CSS and PHP, in an ASP.NET framework. 
-            I had to learn them from scratch with no prior knowledge and little did I knew, it sparked my interest in coding. Fast forward after graduating and trying out different industries, I landed my very first job in web development. 
-          </p>
-          <p class="gray-text mt-3 mb-4">
-            I started my very first coding project in 2019 when I was in finals in my university. It was a simple website that had the basics mainly using HTML, CSS and PHP, in an ASP.NET framework. 
-            I had to learn them from scratch with no prior knowledge and little did I knew, it sparked my interest in coding. Fast forward after graduating and trying out different industries, I landed my very first job in web development. 
-          </p>
+        <section id="projects" class="section-margin" style="height: 70vh;">
+          <ol class="card-ol">
+            <li class="card-li" *ngFor="let project of projects">
+              <a class="row card-link" [href]="project.link" target="_blank">
+                <img [src]="project.img" alt="Project Img">
+                <div class="col-sm-8">
+                  <div class="d-flex flex-row align-items-center">
+                    <span class="card-title me-2">{{ project.title }}</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-arrow-up-right" style="color: white;" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
+                    </svg>
+                  </div>
+                  <p class="card-desc gray-text mt-2">
+                    {{ project.description }}
+                  </p>
+                  <ul class="mt-2 d-flex flex-wrap">
+                    <li class="skills-margin" *ngFor="let skill of project.skills">
+                      <div class="d-flex align-items-center skills-item py-1 px-3">{{ skill }}</div>
+                    </li>
+                  </ul>
+                </div>
+              </a>
+            </li>
+          </ol>
+          <span class="coming-soon">More projects coming soon!</span>
         </section>
         <footer>
           <p>
-            Loosely designed in Figma and coded in Visual Studio Code by yours truly. Built with Angular and SASS, deployed with Github.io. All text is set in the Inter typeface.
+            Coded in Visual Studio Code by yours truly. Built with Angular and SASS, deployed with Github.io. All text is set in the Inter typeface.
           </p>
         </footer>
       </div>
