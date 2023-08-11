@@ -23,6 +23,7 @@
 .sub-title {
   font-size: 1.3rem;
   font-weight: bold;
+  color: lightgrey;
 }
 
 .title:hover {
@@ -116,6 +117,15 @@ nav, ul {
   }
 }
 
+.icons-social {
+  gap: 1.25rem;
+}
+
+.content-sub-title {
+  display: none;
+  @extend .sub-title;
+}
+
 .card-ol {
   list-style: none;
   padding-left: 0rem;
@@ -135,16 +145,16 @@ nav, ul {
       transition: background-color 0.3s ease, padding 0.3s ease, box-shadow 0.3s ease;
 
       img {
-        width: 25%;
-        height: 25%;
-        border-radius: 1rem;
+        width: 160px;
+        height: 70px;
+        border-radius: 10% / 5%;
       }
 
       &:hover {
         opacity: 1;
         filter: none;
-        background-color: rgba(0, 0, 0, 0.1);
-        border-radius: 0.25rem;
+        background-color: rgba(190, 190, 190, 0.1);
+        border-radius: 0.5rem;
         box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
         padding: 0.5rem;
 
@@ -226,6 +236,10 @@ nav, ul {
   }
 }
 
+.project-section {
+  height: 70vh;
+}
+
 .coming-soon {
   line-height: 1.25;
   font-weight: 600;
@@ -233,8 +247,139 @@ nav, ul {
   margin-top: 500px;
 }
 
-/* @media (max-width: 1024px) {
+footer {
+  p {
+    @extend .gray-text;
+  }
+}
+
+@media (max-width: 991px) {
     .header {
-      position: static !important;
+      height: auto;
+      padding-bottom: 0;
     }
-} */
+
+    .icons-social {
+      margin-top: 2rem;
+    }
+
+    .nav-margin {
+      display: none;
+    }
+
+    .content-sub-title {
+      display: block;
+    }
+    
+}
+
+@media (max-width: 425px) {
+  p {
+    font-size: 3.76vw !important;
+  }
+
+  .header, .content {
+    padding-top: 22.588vw !important;
+  }
+
+  .header, p {
+    margin-top: 3.765vw !important;
+    margin-bottom: 3.765vw !important;
+  }
+
+  .title {
+    font-size: 11.294vw !important;
+  }
+
+  .sub-title {
+    font-size: 4.894vw !important;
+  }
+
+  .nav-margin {
+    margin-top: 15.059vw !important;
+  }
+
+  .nav-indicator {
+    width: 7.529vw !important;
+  }
+
+  .nav-link-text {
+    font-size: 2.824vw !important;
+  }
+
+  .icons-social {
+    gap: 4.706vw !important;
+    margin-top: 7.529vw !important;
+
+    svg {
+      width: 5.647vw !important;
+      height: 5.647vw !important;
+    }
+  }
+
+  .section-margin {
+    margin-bottom: 33.882vw !important;
+  }
+
+  .card-ol {
+    margin-top: 5.647vw !important;
+    margin-bottom: 5.647vw !important;
+
+    .card-li {
+      margin-bottom: 11.294vw !important;
+
+      .card-link {
+        svg {
+          width: 2.824vw !important;
+          height: 2.824vw !important;
+        }
+    
+        img {
+          width: 37.647vw !important;
+          height: 16.471vw !important;
+        }
+    
+        .card-date {
+          font-size: 2.824vw !important;
+        }
+      
+        .card-title {
+          font-size: 3.765vw !important;
+        }
+      
+        .card-desc {
+          font-size: 3.294vw !important;
+        }
+      }
+    }
+  }
+
+  .skills-margin {
+    margin-top: 1.882vw !important;
+    margin-right: 1.412vw !important;
+
+    .skills-item {
+      font-size: 2.824vw !important;
+      line-height: 4.706vw !important;
+      border-radius: 2352.706vw !important;
+      padding: 0.941vw 3.765vw 0.941vw 3.765vw !important;
+    }
+  }
+
+  .resume-link {
+    span {
+      font-size: 3.765vw !important;
+    }
+
+    svg {
+      width: 5.647vw !important;
+      height: 5.647vw !important;
+    }
+  }
+
+  .coming-soon {
+    font-size: 3.765vw !important;
+    margin-top: 500px;
+  }
+
+}
