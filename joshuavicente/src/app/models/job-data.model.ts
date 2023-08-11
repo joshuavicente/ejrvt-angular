@@ -4,7 +4,7 @@ export const jobs = [
     link: 'https://www.nalagenetics.com',
     title: 'Software Engineer (Front-End) · Nalagenetics',
     description: 'Front-end developer skilled in creating scalable web portals and company websites for optimal user experiences. Collaborated on API integrations, conducted code reviews, and resolved bugs while ensuring minimal downtime. Leveraged Figma for efficient UI/UX design collaboration. Managed documentation and utilized Jira/Atlassian for effective project management.',
-    skills: ['Angular', 'SASS', 'JavaScript', 'TypeScript', 'Bitbucket', 'SourceTree', 'Figma', 'Jira']
+    skills: ['Angular', 'SASS', 'TypeScript', 'Bitbucket', 'SourceTree', 'Figma', 'Jira']
   },
   {
     date: '2021 — 2022',
