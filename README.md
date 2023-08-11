@@ -7,8 +7,8 @@ My own website showcasing my portfolio built using Angular.
 
 ## Getting Started
 1. Clone the repository:
-   - `git clone https://github.com/YourUsername/AngularAppName.git`
-   - `cd joshuavicente`
+   - `git clone https://github.com/joshuavicente/joshuavicente.git`
+   - `cd joshuavicete/joshuavicente`
 
 2. Install dependencies:
    - `npm install`
