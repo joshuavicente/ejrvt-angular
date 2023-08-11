@@ -236,7 +236,7 @@ nav, ul {
   }
 }
 
-.project-section {
+.projects-section {
   height: 70vh;
 }
 
@@ -245,6 +245,7 @@ nav, ul {
   font-weight: 600;
   color: white;
   margin-top: 500px;
+  margin-bottom: 9rem !important;
 }
 
 footer {
@@ -254,23 +255,26 @@ footer {
 }
 
 @media (max-width: 991px) {
-    .header {
-      height: auto;
-      padding-bottom: 0;
-    }
+  .header {
+    height: auto;
+    padding-bottom: 0;
+  }
 
-    .icons-social {
-      margin-top: 2rem;
-    }
+  .icons-social {
+    margin-top: 2rem;
+  }
 
-    .nav-margin {
-      display: none;
-    }
+  .nav-margin {
+    display: none;
+  }
 
-    .content-sub-title {
-      display: block;
-    }
-    
+  .content-sub-title {
+    display: block;
+  }
+
+  .projects-section {
+    height: auto !important;
+  }
 }
 
 @media (max-width: 425px) {
@@ -381,5 +385,4 @@ footer {
     font-size: 3.765vw !important;
     margin-top: 500px;
   }
-
 }
