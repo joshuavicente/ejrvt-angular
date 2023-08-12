@@ -254,7 +254,7 @@ footer {
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 992px) {
   .header {
     height: auto;
     padding-bottom: 0;
@@ -272,12 +272,54 @@ footer {
     display: block;
   }
 
+  .card-ol {
+    &:hover .card-link {
+      opacity: unset;
+      filter: unset;
+    }
+  
+    .card-li {
+      .card-link {
+        .card-title {
+          color: rgb(94 234 212);
+        }
+
+        .bi-arrow-up-right {
+          color: rgb(94 234 212);
+        }
+        
+        &:hover {
+          opacity: unset;
+          filter: unset;
+          background-color: unset;
+          border-radius: unset;
+          box-shadow: unset;
+          padding: unset;
+  
+          .card-title {
+            color: rgb(94 234 212);
+          }
+    
+          .bi-arrow-up-right {
+            color: rgb(94 234 212);
+            transform: unset;
+          }
+  
+          ~ .card-link {
+            opacity: unset;
+            filter: unset;
+          }
+        }
+      }
+    }
+  }
+
   .projects-section {
     height: auto !important;
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 426px) {
   p {
     font-size: 3.76vw !important;
   }
