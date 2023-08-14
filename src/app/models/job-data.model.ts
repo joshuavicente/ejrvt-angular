@@ -1,6 +1,6 @@
 export const jobs = [
   {
-    date: '2022 — Present',
+    date: '2022 — 2023',
     link: 'https://www.nalagenetics.com',
     title: 'Software Engineer (Front-End) · Nalagenetics',
     description: 'Front-end developer skilled in creating scalable web portals and company websites for optimal user experiences. Collaborated on API integrations, conducted code reviews, and resolved bugs while ensuring minimal downtime. Leveraged Figma for efficient UI/UX design collaboration. Managed documentation and utilized Jira/Atlassian for effective project management.',
