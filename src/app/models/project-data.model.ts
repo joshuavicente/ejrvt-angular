@@ -1,5 +1,13 @@
 export const projects = [
   {
+    img: './assets/img/logo-CPF-web.jpg',
+    imgName: 'cpf.png',
+    link: 'www.cpf.gov.sg',
+    title: 'Central Profident Fund (CPF) Board',
+    description: 'Build and upgrade CPF web applications to ensure that they are responsive, accessible and mobile-friendly.',
+    skills: ['Angular', 'TypeScript', 'AEM', 'Azure']
+  },
+  {
     img: './assets/img/joshua-vicente-v1.png',
     imgName: 'joshua-vicente-v1.png',
     link: 'https://ejrvt.vercel.app',

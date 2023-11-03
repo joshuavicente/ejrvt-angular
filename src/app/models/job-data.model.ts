@@ -1,5 +1,12 @@
 export const jobs = [
   {
+    date: '2023 — Present',
+    link: 'https://www.accenture.com/sg-en/about/company/singapore',
+    title: 'Software Developer (Front-End) · Accenture Pte Ltd',
+    description: 'Develop scalable applications for clients using Angular and Adobe Experience Manager (AEM).',
+    skills: ['Angular', 'SASS', 'TypeScript', 'SourceTree', 'Figma', 'Azure', 'AEM']
+  },
+  {
     date: '2022 — 2023',
     link: 'https://www.nalagenetics.com',
     title: 'Software Engineer (Front-End) · Nalagenetics',
