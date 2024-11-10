@@ -4,7 +4,7 @@ export const jobs = [
     link: 'https://www.accenture.com/sg-en/about/company/singapore',
     title: 'Software Developer (Front-End) · Accenture Pte Ltd',
     description: 'Develop and maintain scalable applications for clients using JavaScript, Angular and Adobe Experience Manager (AEM). Collaborated with cross-functional teams, including developers, designers and project managers.',
-    skills: ['JavaScript', 'Angular', 'SASS', 'TypeScript', 'SourceTree', 'Figma', 'Azure', 'AEM']
+    skills: ['JavaScript', 'Angular', 'React', 'Tailwind CSS', 'SASS', 'TypeScript', 'SourceTree', 'Figma', 'Azure', 'AEM']
   },
   {
     date: '2022 — 2023',
