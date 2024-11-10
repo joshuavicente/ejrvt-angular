@@ -236,10 +236,6 @@ nav, ul {
   }
 }
 
-.projects-section {
-  height: 70vh;
-}
-
 .coming-soon {
   line-height: 1.25;
   font-weight: 600;
@@ -316,6 +312,12 @@ footer {
 
   .projects-section {
     height: auto !important;
+  }
+}
+
+@media (min-width: 576px) {
+  .col-sm-8 {
+    width: auto;
   }
 }
 
