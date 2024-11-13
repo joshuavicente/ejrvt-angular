@@ -32,15 +32,15 @@ export class HomeComponent implements AfterViewInit {
   projects: Project[] = projects;
 
   constructor(
-    private route: ActivatedRoute, 
-    private router: Router
+    private readonly route: ActivatedRoute, 
+    private readonly router: Router
   ) {}
 
   ngAfterViewInit() {                                                                                
     this.route.fragment.subscribe((fragment: string | null) => {
       setTimeout(() => {
-        this.scrollToFragment(fragment || 'about');
-      }, 50);  // delay in milliseconds
+        this.scrollToFragment(fragment ?? 'about');
+      }, 50);
     });
   }
 
@@ -51,19 +51,19 @@ export class HomeComponent implements AfterViewInit {
   }
 
   private scrollToFragment(fragment: string): void {
-    this.currentSection = fragment;  // Set the current section here
+    this.currentSection = fragment;
     const targetElement = document.getElementById(fragment);
     if (targetElement) {
       const yOffset = -100;
-      const y = targetElement.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      const y = targetElement.getBoundingClientRect().top + window.scrollY + yOffset;
       window.scrollTo({ top: y, behavior: 'smooth' });
     }
   }
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
-    const position = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
-    const threshold = window.innerHeight * 0.5;  // Adjust as needed
+    const position = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop || 0;
+    const threshold = window.innerHeight * 0.5;
 
     if (position + threshold >= this.getPosition('about') && position + threshold < this.getPosition('experience')) {
         this.currentSection = 'about';
