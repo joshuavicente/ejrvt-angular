@@ -12,6 +12,7 @@ export const jobs = [
       'React',
       'RxJS',
       'NgRx',
+      'Jasmine',
       'Tailwind CSS',
       'TanStack',
       'Figma',
