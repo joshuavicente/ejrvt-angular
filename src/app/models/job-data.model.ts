@@ -2,7 +2,7 @@ export const jobs = [
   {
     date: '2023 — Present',
     link: 'https://www.accenture.com/sg-en/about/company/singapore',
-    title: 'Front-End Developer · Accenture (via Apar Technologies)',
+    title: 'Front-End Developer · Accenture Pte Ltd',
     description:
       'Build enterprise-level web applications for Singapore government clients (CPF, IRAS) using Angular and React. Implement responsive and accessible interfaces with modern tools and manage state with NgRx and reactive patterns using RxJS. Collaborate in agile teams and maintain clean code through peer reviews and documentation.',
     skills: [
@@ -12,6 +12,7 @@ export const jobs = [
       'React',
       'RxJS',
       'NgRx',
+      'SQL',
       'Jasmine',
       'Tailwind CSS',
       'TanStack',
