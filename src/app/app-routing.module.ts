@@ -5,11 +5,20 @@ import { PdfViewerComponent } from './pages/pdf-viewer/pdf-viewer.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'resume.pdf', component: PdfViewerComponent, data: { pdfSrc: '/assets/files/Joshua_Vicente_Resume.pdf' } },
+  {
+    path: 'resume.pdf',
+    component: PdfViewerComponent,
+    data: { pdfSrc: '/assets/files/Elis Joshua Rouen Vicente Tatoypdf' },
+  },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, { onSameUrlNavigation: 'reload', scrollPositionRestoration: 'disabled' })],
-  exports: [RouterModule]
+  imports: [
+    RouterModule.forRoot(routes, {
+      onSameUrlNavigation: 'reload',
+      scrollPositionRestoration: 'disabled',
+    }),
+  ],
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
