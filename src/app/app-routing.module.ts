@@ -8,7 +8,7 @@ const routes: Routes = [
   {
     path: 'resume.pdf',
     component: PdfViewerComponent,
-    data: { pdfSrc: '/assets/files/Elis Joshua Rouen Vicente Tatoypdf' },
+    data: { pdfSrc: '/assets/files/resume.pdf' },
   },
 ];
 
