@@ -1,4 +1,5 @@
 import { Component, AfterViewInit, HostListener } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { ActivatedRoute, Router } from '@angular/router';
 import { jobs } from '@app/models/job-data.model';
 import { projects } from '@app/models/project-data.model';
@@ -24,6 +25,8 @@ export interface Project {
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
+  standalone: true,
+  imports: [CommonModule],
 })
 export class HomeComponent implements AfterViewInit {
   currentSection = 'about';

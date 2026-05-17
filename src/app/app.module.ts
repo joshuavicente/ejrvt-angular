@@ -6,16 +6,15 @@ import { HomeComponent } from './pages/home/home.component';
 import { PdfViewerComponent } from './pages/pdf-viewer/pdf-viewer.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomeComponent,
-    PdfViewerComponent
-  ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AppComponent,
+    HomeComponent,
+    PdfViewerComponent,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  standalone: true,
+  bootstrapComponent: AppComponent,
 })
-export class AppModule { }
+export class AppModule {}
