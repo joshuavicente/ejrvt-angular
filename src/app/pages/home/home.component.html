@@ -164,47 +164,48 @@
           <section id="experience" class="section-margin">
             <span class="content-sub-title">Experience</span>
             <ol class="card-ol mt-4 mb-4">
-              <li class="card-li" *ngFor="let job of jobs">
-                <a class="row card-link" [href]="job.link" target="_blank">
-                  <header class="col-sm-3 card-date gray-text">
-                    {{ job.date }}
-                  </header>
-                  <div class="col-sm-8">
-                    <div class="d-flex flex-row align-items-center">
-                      <span class="card-title me-2">{{ job.title }}</span>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="12"
-                        height="12"
-                        fill="currentColor"
-                        class="bi bi-arrow-up-right"
-                        style="color: white"
-                        viewBox="0 0 16 16"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"
-                        />
-                      </svg>
-                    </div>
-                    <p class="card-desc gray-text mt-2">
-                      {{ job.description }}
-                    </p>
-                    <ul class="mt-2 d-flex flex-wrap">
-                      <li
-                        class="skills-margin"
-                        *ngFor="let skill of job.skills"
-                      >
-                        <div
-                          class="d-flex align-items-center skills-item py-1 px-3"
+              @for (job of jobs(); track job.title) {
+                <li class="card-li">
+                  <a class="row card-link" [href]="job.link" target="_blank">
+                    <header class="col-sm-3 card-date gray-text">
+                      {{ job.date }}
+                    </header>
+                    <div class="col-sm-8">
+                      <div class="d-flex flex-row align-items-center">
+                        <span class="card-title me-2">{{ job.title }}</span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="12"
+                          height="12"
+                          fill="currentColor"
+                          class="bi bi-arrow-up-right"
+                          style="color: white"
+                          viewBox="0 0 16 16"
                         >
-                          {{ skill }}
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </a>
-              </li>
+                          <path
+                            fill-rule="evenodd"
+                            d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"
+                          />
+                        </svg>
+                      </div>
+                      <p class="card-desc gray-text mt-2">
+                        {{ job.description }}
+                      </p>
+                      <ul class="mt-2 d-flex flex-wrap">
+                        @for (skill of job.skills; track skill) {
+                          <li class="skills-margin">
+                            <div
+                              class="d-flex align-items-center skills-item py-1 px-3"
+                            >
+                              {{ skill }}
+                            </div>
+                          </li>
+                        }
+                      </ul>
+                    </div>
+                  </a>
+                </li>
+              }
             </ol>
             <a class="resume-link" href="/resume.pdf" target="_blank">
               <span>View Full Résumé</span>
@@ -226,45 +227,50 @@
           <section id="projects" class="section-margin projects-section">
             <span class="content-sub-title">Projects</span>
             <ol class="card-ol mt-4 mb-4">
-              <li class="card-li" *ngFor="let project of projects">
-                <a class="row card-link" [href]="project.link" target="_blank">
-                  <img [src]="project.img" alt="Project Img" />
-                  <div class="col-sm-8">
-                    <div class="d-flex flex-row align-items-center">
-                      <span class="card-title me-2">{{ project.title }}</span>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="12"
-                        height="12"
-                        fill="currentColor"
-                        class="bi bi-arrow-up-right"
-                        style="color: white"
-                        viewBox="0 0 16 16"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"
-                        />
-                      </svg>
-                    </div>
-                    <p class="card-desc gray-text mt-2">
-                      {{ project.description }}
-                    </p>
-                    <ul class="mt-2 d-flex flex-wrap">
-                      <li
-                        class="skills-margin"
-                        *ngFor="let skill of project.skills"
-                      >
-                        <div
-                          class="d-flex align-items-center skills-item py-1 px-3"
+              @for (project of projects(); track project.title) {
+                <li class="card-li">
+                  <a
+                    class="row card-link"
+                    [href]="project.link"
+                    target="_blank"
+                  >
+                    <img [src]="project.img" alt="Project Img" />
+                    <div class="col-sm-8">
+                      <div class="d-flex flex-row align-items-center">
+                        <span class="card-title me-2">{{ project.title }}</span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="12"
+                          height="12"
+                          fill="currentColor"
+                          class="bi bi-arrow-up-right"
+                          style="color: white"
+                          viewBox="0 0 16 16"
                         >
-                          {{ skill }}
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </a>
-              </li>
+                          <path
+                            fill-rule="evenodd"
+                            d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"
+                          />
+                        </svg>
+                      </div>
+                      <p class="card-desc gray-text mt-2">
+                        {{ project.description }}
+                      </p>
+                      <ul class="mt-2 d-flex flex-wrap">
+                        @for (skill of project.skills; track skill) {
+                          <li class="skills-margin">
+                            <div
+                              class="d-flex align-items-center skills-item py-1 px-3"
+                            >
+                              {{ skill }}
+                            </div>
+                          </li>
+                        }
+                      </ul>
+                    </div>
+                  </a>
+                </li>
+              }
             </ol>
             <span class="coming-soon">More projects coming soon!</span>
           </section>

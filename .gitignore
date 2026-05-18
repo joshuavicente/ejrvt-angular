@@ -40,3 +40,9 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+# .gitignore
+.env
+api/.env
+node_modules/
+dist/

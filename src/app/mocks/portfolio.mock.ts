@@ -1,5 +1,8 @@
-export const jobs = [
+import { Job, Project } from '../models/portfolio.model';
+
+export const MOCK_JOBS: Job[] = [
   {
+    _id: '1',
     date: '2023 — Present',
     link: 'https://www.accenture.com/sg-en/about/company/singapore',
     title: 'Front-End Developer · Accenture Pte Ltd',
@@ -22,6 +25,7 @@ export const jobs = [
     ],
   },
   {
+    _id: '2',
     date: '2022 — 2023',
     link: 'https://www.nalagenetics.com',
     title: 'Software Engineer (Front-End) · Nalagenetics',
@@ -38,6 +42,7 @@ export const jobs = [
     ],
   },
   {
+    _id: '3',
     date: '2021 — 2022',
     link: 'https://www.nalagenetics.com',
     title: 'IT Support Engineer · Nalagenetics',
@@ -46,6 +51,7 @@ export const jobs = [
     skills: ['AWS', 'EC2', 'S3', 'JumpCloud', 'Jira', 'ISO 27001', 'ISO 13485'],
   },
   {
+    _id: '4',
     date: '2020 — 2021',
     link: 'https://geodis.com/sg/en',
     title: 'Regional IT Project Specialist · GEODIS APAC',
@@ -59,5 +65,18 @@ export const jobs = [
       'Documentation',
       'Stakeholder Coordination',
     ],
+  },
+];
+
+export const MOCK_PROJECTS: Project[] = [
+  {
+    _id: '1',
+    img: './assets/img/joshua-vicente-v1.png',
+    imgName: 'joshua-vicente-v1.png',
+    link: 'https://ejrvt.vercel.app',
+    title: 'ejrvt.vercel.app',
+    description:
+      'My portfolio site built on Angular and hosted on Vercel. This site is a work in progress and will be updated as I learn new skills and technologies.',
+    skills: ['Angular', 'SASS', 'TypeScript', 'Bootstrap', 'Github', 'Vercel'],
   },
 ];
